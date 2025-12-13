@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Delivery\Commands\" />
+    <Folder Include="Delivery\Queries\" />
+    <Folder Include="Mappings\" />
+    <Folder Include="Resident\Commands\" />
+    <Folder Include="Resident\Queries\" />
+    <Folder Include="Validators\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.0.0" />
+  </ItemGroup>
+
 </Project>
