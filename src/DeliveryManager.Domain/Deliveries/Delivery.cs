@@ -2,7 +2,7 @@ using DeliveryManager.Domain.Errors;
 using DeliveryManager.Domain.Exceptions;
 using DeliveryManager.Domain.Shared.Validation;
 
-namespace DeliveryManager.Domain.Delivery;
+namespace DeliveryManager.Domain.Deliveries;
 
 public class Delivery
 {

@@ -7,8 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Delivery\Commands\" />
-    <Folder Include="Delivery\Queries\" />
+    <Folder Include="Deliveries\Queries\" />
     <Folder Include="Mappings\" />
     <Folder Include="Resident\Commands\" />
     <Folder Include="Resident\Queries\" />
@@ -17,6 +16,10 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="16.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DeliveryManager.Domain\DeliveryManager.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
-using DeliveryManager.Domain.Resident;
-using DeliveryManager.Domain.Delivery.ValueObjects;
+using DeliveryManager.Domain.Residents;
+using DeliveryManager.Domain.Residents.ValueObjects;
 
 namespace DeliveryManager.Tests.Builders;
 

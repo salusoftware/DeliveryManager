@@ -3,7 +3,7 @@ using DeliveryManager.Domain.Errors;
 using DeliveryManager.Domain.Exceptions;
 using DeliveryManager.Domain.Shared.Validation;
 
-namespace DeliveryManager.Domain.Delivery.ValueObjects;
+namespace DeliveryManager.Domain.Residents.ValueObjects;
 
 public sealed class Address : IEquatable<Address>
 {

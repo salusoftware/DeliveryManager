@@ -1,4 +1,4 @@
-using DeliveryManager.Domain.Delivery;
+using DeliveryManager.Domain.Deliveries;
 
 namespace DeliveryManager.Tests.Builders;
 

@@ -1,4 +1,4 @@
-using DeliveryManager.Domain.Delivery;
+using DeliveryManager.Domain.Deliveries;
 using Microsoft.EntityFrameworkCore;
 
 namespace DeliveryManager.Infrastructure.Persistence;

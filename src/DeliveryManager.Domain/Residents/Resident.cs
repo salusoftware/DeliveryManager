@@ -1,9 +1,9 @@
-using DeliveryManager.Domain.Delivery.ValueObjects;
+using DeliveryManager.Domain.Residents.ValueObjects;
 using DeliveryManager.Domain.Errors;
 using DeliveryManager.Domain.Exceptions;
 using DeliveryManager.Domain.Shared.Validation;
 
-namespace DeliveryManager.Domain.Resident;
+namespace DeliveryManager.Domain.Residents;
 
 public class Resident
 {
