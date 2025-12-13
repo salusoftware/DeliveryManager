@@ -8,6 +8,7 @@ public class DeliveryBuilder
     private string? _carrier = "Fake Transportadora";
     private string? _keyWord = "Céu";
     private string? _trackingCode = "TRCODE009988";
+    private Guid _residentId = Guid.NewGuid();
 
     public static DeliveryBuilder Valid()
     {
@@ -63,12 +64,25 @@ public class DeliveryBuilder
         return this;
     }
 
+    public DeliveryBuilder WithResidentId(Guid residentId)
+    {
+        _residentId = residentId;
+        return this;
+    }
+
+    public DeliveryBuilder WithOutResidentId()
+    {
+        _residentId = Guid.Empty;
+        return this;
+    }
+
     public Delivery Build()
     {
         return  Delivery.Create(
 #pragma warning disable CS8604 // Possible null reference argument.
             _name,
 #pragma warning restore CS8604 // Possible null reference argument.
+            _residentId,
             _carrier,
             _keyWord,
             _trackingCode

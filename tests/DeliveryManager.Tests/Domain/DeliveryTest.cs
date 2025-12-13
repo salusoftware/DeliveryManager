@@ -42,6 +42,7 @@ public class DeliveryTest
         new(b =>  b.WithCarrier(new string('X', 256)), DeliveryErrors.CarrierMaxLength),
         new(b =>  b.WithTrackingCode(new string('X', 256)), DeliveryErrors.TrackingCodeMaxLength),
         new(b =>  b.WithKeyWord(new string('X', 256)), DeliveryErrors.KeyWordMaxLength),
+        new(b =>  b.WithOutResidentId(), DeliveryErrors.ResidentIdIsRequired),
     });
 
 }
