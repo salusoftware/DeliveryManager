@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/DeliveryManager.Application/DeliveryManager.Application.csproj" />
     <Project Path="src/DeliveryManager.Domain/DeliveryManager.Domain.csproj" />
+    <Project Path="src/DeliveryManager.Infrastructure/DeliveryManager.Infrastructure.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/DeliveryManager.Tests/DeliveryManager.Tests.csproj" />
