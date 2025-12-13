@@ -3,16 +3,18 @@ using DeliveryManager.Domain.Errors;
 using DeliveryManager.Domain.Exceptions;
 using DeliveryManager.Domain.Shared.Validation;
 
-namespace DeliveryManager.Domain.Delivery.Resident;
+namespace DeliveryManager.Domain.Resident;
 
 public class Resident
 {
+    public Guid Id { get; }
     public string Name { get; }
     public string Surname { get; }
     public Address Address { get; }
     
     private Resident(string name, string surname, Address address)
     {
+        Id = Guid.NewGuid();
         Name = name;
         Surname = surname;
         Address = address;

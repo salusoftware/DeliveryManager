@@ -1,4 +1,4 @@
-using DeliveryManager.Domain.Delivery.Resident;
+using DeliveryManager.Domain.Resident;
 using DeliveryManager.Domain.Delivery.ValueObjects;
 
 namespace DeliveryManager.Tests.Builders;
