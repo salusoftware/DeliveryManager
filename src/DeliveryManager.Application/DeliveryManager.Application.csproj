@@ -9,13 +9,15 @@
   <ItemGroup>
     <Folder Include="Deliveries\Queries\" />
     <Folder Include="Mappings\" />
-    <Folder Include="Resident\Commands\" />
-    <Folder Include="Resident\Queries\" />
+    <Folder Include="Residents\Queries\" />
     <Folder Include="Validators\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="16.0.0" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Scrutor" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>

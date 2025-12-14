@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/DeliveryManager.Api/DeliveryManager.Api.csproj" />
     <Project Path="src/DeliveryManager.Application/DeliveryManager.Application.csproj" />
     <Project Path="src/DeliveryManager.Domain/DeliveryManager.Domain.csproj" />
     <Project Path="src/DeliveryManager.Infrastructure/DeliveryManager.Infrastructure.csproj" />
