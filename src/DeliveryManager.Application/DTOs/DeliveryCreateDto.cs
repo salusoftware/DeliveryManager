@@ -1,3 +1,3 @@
 namespace DeliveryManager.Application.DTOs;
 
-public record DeliveryCreateDto(string Name, string? Carrier, string? KeyWork, string? TrackingCode);
+public record DeliveryCreateDto(string Name, string? Carrier, string? KeyWord, string? TrackingCode);

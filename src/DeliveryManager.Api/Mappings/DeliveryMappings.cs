@@ -10,7 +10,7 @@ public static class DeliveryMappings
             dto.Name,
             dto.ResidentId,
             dto.Carrier,
-            dto.KeyWork,
+            dto.KeyWord,
             dto.TrackingCode
         );
 }

@@ -14,7 +14,7 @@ public sealed class CreateDeliveryCommandHandler(IDeliveryRepository repo)
             request.Name, 
             request.ResidentId, 
             request.Carrier, 
-            request.KeyWork, 
+            request.KeyWord, 
             request.TrackingCode);
 
         await repo.CreateAsync(delivery, ct);
