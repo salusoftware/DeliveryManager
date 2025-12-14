@@ -12,6 +12,9 @@ public class Resident
     public string Surname { get; }
     public Address Address { get; }
     
+    //Ef
+    private Resident(){}
+    
     private Resident(string name, string surname, Address address)
     {
         Id = Guid.NewGuid();
