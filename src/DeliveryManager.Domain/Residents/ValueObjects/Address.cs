@@ -15,6 +15,9 @@ public sealed class Address : IEquatable<Address>
     
     private static readonly Regex CepRegex = new(@"^\d{5}-?\d{3}$", RegexOptions.Compiled);
     private static readonly Regex StateRegex = new(@"^[A-Z]{2}$", RegexOptions.Compiled);
+    
+    //EF
+    private Address() { }
     private Address(string street, int number, string city, string state, string zipCode)
     {
         Street = street;
