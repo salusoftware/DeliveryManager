@@ -13,6 +13,9 @@ public class Delivery
     public string? KeyWord { get;}
     public string?  Carrier { get; }
     
+    //Ef
+    private Delivery(){}
+    
     private Delivery(string name, Guid residentId, string? carrier, string? keyWord, string? trackingCode)
     {
         Id = Guid.NewGuid();
