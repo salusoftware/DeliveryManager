@@ -1,3 +1,6 @@
+using DeliveryManager.Application.Deliveries.ReadModels;
+using MediatR;
+
 namespace DeliveryManager.Application.Deliveries.Commands;
 
 public record CreateDeliveryCommand(
@@ -6,4 +9,4 @@ public record CreateDeliveryCommand(
     string? Carrier,
     string? KeyWork,
     string? TrackingCode
-);
+) : IRequest<DeliveryReadModel>;

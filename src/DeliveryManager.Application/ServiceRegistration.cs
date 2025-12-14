@@ -1,7 +1,7 @@
 using FluentValidation;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
-using DeliveryManager.Application.Common;
 
 namespace DeliveryManager.Application;
 
@@ -11,18 +11,11 @@ public static class ServiceRegistration
     {
         var assembly = Assembly.GetExecutingAssembly();
 
-        // AutoMapper
-        //services.AddAutoMapper(assembly);
+        // MediatR
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(assembly));
 
         // Validators
         services.AddValidatorsFromAssembly(assembly);
-
-        // Use cases (assembly scanning)
-        services.Scan(scan => scan
-            .FromAssemblies(assembly)
-            .AddClasses(classes => classes.AssignableTo(typeof(IHandler)))
-            .AsSelf()
-            .WithScopedLifetime());
 
         return services;
     }

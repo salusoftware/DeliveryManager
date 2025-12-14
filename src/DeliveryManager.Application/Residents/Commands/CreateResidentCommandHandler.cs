@@ -1,16 +1,16 @@
-using DeliveryManager.Application.Common;
 using DeliveryManager.Application.Residents.ReadModels;
-using DeliveryManager.Domain.Residents.Repositories;
 using DeliveryManager.Domain.Residents;
+using DeliveryManager.Domain.Residents.Repositories;
 using DeliveryManager.Domain.Residents.ValueObjects;
+using MediatR;
 
 namespace DeliveryManager.Application.Residents.Commands;
 
-public class CreateResidentCommandHandler(IResidentRepository repo) : IHandler
+public class CreateResidentCommandHandler(IResidentRepository repo) 
+    : IRequestHandler<CreateResidentCommand, ResidentReadModel>
 {
     public async Task<ResidentReadModel> Handle(CreateResidentCommand command, CancellationToken ct)
     {
-
         var resident = Resident.Create(
              command.Name,
              command.Surname,

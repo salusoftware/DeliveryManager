@@ -1,11 +1,12 @@
-using DeliveryManager.Application.Common;
 using DeliveryManager.Application.Deliveries.ReadModels;
 using DeliveryManager.Domain.Deliveries;
 using DeliveryManager.Domain.Deliveries.Repositories;
+using MediatR;
 
 namespace DeliveryManager.Application.Deliveries.Commands;
 
-public sealed class CreateDeliveryCommandHandler(IDeliveryRepository repo) : IHandler
+public sealed class CreateDeliveryCommandHandler(IDeliveryRepository repo) 
+    : IRequestHandler<CreateDeliveryCommand, DeliveryReadModel>
 {
     public async Task<DeliveryReadModel> Handle(CreateDeliveryCommand request, CancellationToken ct)
     {

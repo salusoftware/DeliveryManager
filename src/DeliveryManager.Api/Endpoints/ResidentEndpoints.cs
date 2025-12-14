@@ -1,6 +1,7 @@
 using DeliveryManager.Api.DTOs;
 using DeliveryManager.Api.Mappings;
 using DeliveryManager.Application.Residents.Commands;
+using MediatR;
 
 namespace DeliveryManager.Api.Endpoints;
 
@@ -12,11 +13,12 @@ public static class ResidentEndpoints
         
         group.MapPost("", async (
             CreateResidentDto dto,
-            CreateResidentCommandHandler createResidentCommandHandler,
+            IMediator mediator,
             CancellationToken ct
             ) =>
         {
-            var result = await createResidentCommandHandler.Handle(dto.ToCommand(), ct);
+            var command = dto.ToCommand();
+            var result = await mediator.Send(command, ct);
             return result;
         });
         
