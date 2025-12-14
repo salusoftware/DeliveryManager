@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: delivery-manager-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: deliverymanager
+      POSTGRES_PASSWORD: nf/DnA347L4&
+      POSTGRES_DB: DeliveryManagerDatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    networks:
+      - delivery_manager_network
+
+volumes:
+  postgres_data:
+
+networks:
+  delivery_manager_network:
